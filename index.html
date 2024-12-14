@@ -11,10 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Silkscreen:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <center>
       <!-- bgcolor="#faebce" -->
+      
       <div class="container pixel-border">
         <div class="upper"></div>
         <img src="assets/Group 8.png" height="200px" id="logo" />
@@ -25,71 +27,117 @@
             the Pizza Hut logo on any page to submit comments regarding this
             service to <b> webmaster@pizzahut.com.</b>
           </p>
+
           <div id="search-tab">
             <b><label for="search">Search</label></b>
             <input type="text" id="search" />
           </div>
           <div class="main pixel-border">
             <div class="item pixel-border" id="one">
-              <img src="assets/pizza1.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza1.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(0)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza2.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza2.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(1)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza3.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza3.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(2)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza4.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza4.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(3)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza5.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza5.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(4)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza6.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza6.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(5)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza7.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza7.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(6)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza8.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza8.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(7)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
             <div class="item pixel-border">
-              <img src="assets/pizza9.jpg" alt="" height="180px" width="180px" />
+              <img
+                src="assets/pizza9.jpg"
+                alt=""
+                height="180px"
+                width="180px"
+              />
               <div id="temp">
-                <div class="buy pixel-border">BUY</div>
+                <div class="buy pixel-border" onclick="purchase(8)">BUY</div>
                 <img src="assets/like.png" width="50px" height="50px" />
               </div>
             </div>
@@ -102,6 +150,56 @@
             Lycos Privacy Policy and Terms & Conditions
           </footer>
         </center>
+        <div id="" class=" overlay hidden">
+          <div class="backdrop"></div>
+          <div class="order pixel-border">
+            
+            <h2>Confirm Your Order</h2>
+            <img id="orderedPizza" src="assets/pizza1.jpg" alt="" width="150px" height="150px" />
+            <div class="details">
+              <div class="nameQuantity">
+                <h2>Margherita Pizza</h2>
+                <div class="quantity pixel-border">
+                  <img
+                    src="assets/plus-symbol-button.png"
+                    alt="add"
+                    width="15px"
+                    height="15px"
+                  />
+                  <h2>2</h2>
+                  <img
+                    src="assets/minus.png"
+                    alt="minus"
+                    width="15px"
+                    height="15px"
+                  />
+                </div>
+              </div>
+              <div class="amount">
+                <h2>Amount</h2>
+                <div class="totalAmount pixel-border">
+                  <h2>2 X 199 = 398</h2>
+                </div>
+              </div>
+              <div class="address">
+                <h2 id="addressDetails">Address</h2>
+                <br />
+                <div class="deliveryAddress pixel-border">
+                  <p id="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <div class="button">
+              <div id="cancel" class="pixel-border" onclick="close()">Cancel</div>
+              <div class="confirm pixel-border">Confirm</div>
+            </div>
+          </div>
+        </div>
       </div>
     </center>
   </body>

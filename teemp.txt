@@ -1,0 +1,56 @@
+<div id="overlay" class="hidden">
+          <center>
+            <div class="backdrop"></div>
+            <div class="order pixel-border">
+              <h2>Confirm Your Order</h2>
+              <img
+                src="assets/pizza1.jpg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <div class="details">
+                <div class="nameQuantity">
+                  <h2>Margherita Pizza</h2>
+                  <div class="quantity pixel-border">
+                    <img
+                      src="assets/plus-symbol-button.png"
+                      alt="add"
+                      width="15px"
+                      height="15px"
+                    />
+                    <h2>2</h2>
+                    <img
+                      src="assets/minus.png"
+                      alt="minus"
+                      width="15px"
+                      height="15px"
+                    />
+                  </div>
+                </div>
+                <div class="amount">
+                  <h2>Amount</h2>
+                  <div class="totalAmount pixel-border">
+                    <h2>2 X 199 = 398</h2>
+                  </div>
+                </div>
+                <div class="address">
+                  <h2 id="addressDetails">Address</h2>
+                  <br />
+                  <div class="deliveryAddress pixel-border">
+                    <p id="text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <br /><br />
+              <div class="button">
+                <div id = "cancel" class="pixel-border">Cancel</div>
+                <div class="confirm pixel-border">Confirm</div>
+              </div>
+            </div>
+          </center>
+        </div>

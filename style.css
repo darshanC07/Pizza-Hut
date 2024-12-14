@@ -148,10 +148,7 @@ img {
     }
 }
 
-.order {
-    width: 400px;
-    height: 550px;
-}
+
 
 .quantity {
     width: 80px;
@@ -185,6 +182,7 @@ img {
 .deliveryAddress {
     position: relative;
     bottom: 15px;
+    left: 25px;
     margin-top: 0px;
     width: 350px;
     height: 60px;
@@ -198,6 +196,48 @@ img {
 
 .confirm {
     width: 65px;
+}
+#cancel {
+    width: 65px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 0px 22px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.order {
+    width: 400px;
+    height: 550px;
+    z-index: 20;
     position: relative;
-    left: 35%;
+    background: white;
+    padding: 20px;
+    /* border-radius: 8px; */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hidden {
+    display: none;
+}
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(2px); 
+    z-index: -10;
 }
