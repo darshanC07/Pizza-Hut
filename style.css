@@ -4,9 +4,9 @@ p {
     font-size: x-large;
 }
 
-body {
+/* body {
     cursor: url("assets/cursor.png"), auto;
-}
+} */
 
 label {
     font-family: "Handjet";
@@ -31,6 +31,42 @@ label {
     border-radius: 50%/0 0 50px 50px;
     position: relative;
     bottom: 10px;
+}
+
+.buy {
+    width: 50px;
+    /* background-color: ; */
+    /* background: var(--pixel-bg); */
+    --pixel-bg: rgb(63, 206, 53);
+    box-shadow:
+
+        0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+        0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+        0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+        0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+        0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+        0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+        0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+        0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+
+
+
+
+        calc(var(--pixel) * -3) 0 0 0 var(--pixel-border-3),
+        calc(var(--pixel) * 3) 0 0 0 var(--pixel-border-3),
+        0 0 0 calc(var(--pixel) * 2) var(--pixel-border-3),
+        0 calc(var(--pixel) * -3) 0 var(--pixel) var(--pixel-border-3),
+        0 calc(var(--pixel) * 3) 0 var(--pixel) var(--pixel-border-3),
+        0 calc(var(--pixel) * -5) 0 0 var(--pixel-border-3),
+        0 calc(var(--pixel) * 5) 0 0 var(--pixel-border-3),
+        0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+        0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -1) var(--pixel-border-3),
+        0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -2) var(--pixel-border-3),
+        0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -2) var(--pixel-border-3),
+        0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -4) var(--pixel-border-3),
+        0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -4) var(--pixel-border-3),
+        0 calc(var(--pixel) * -15) 0 calc(var(--pixel) * -6) var(--pixel-border-3),
+        0 calc(var(--pixel) * 15) 0 calc(var(--pixel) * -6) var(--pixel-border-3);
 }
 
 .main {
@@ -112,11 +148,12 @@ img {
     }
 }
 
-.order{
+.order {
     width: 400px;
     height: 550px;
 }
-.quantity{
+
+.quantity {
     width: 80px;
     height: 27px;
     display: flex;
@@ -124,37 +161,42 @@ img {
     justify-content: space-around;
 }
 
-.nameQuantity ,.amount{
+.nameQuantity,
+.amount {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.totalAmount{
+.totalAmount {
     width: 200px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#addressDetails{
+
+#addressDetails {
     position: relative;
     right: 130px;
     margin-bottom: 0px;
 }
-.deliveryAddress{
+
+.deliveryAddress {
     position: relative;
     bottom: 15px;
     margin-top: 0px;
     width: 350px;
     height: 60px;
 }
-#text{
+
+#text {
     width: 330px;
     text-align: left;
     font-size: medium;
 }
-.confirm{
+
+.confirm {
     width: 65px;
     position: relative;
     left: 35%;
