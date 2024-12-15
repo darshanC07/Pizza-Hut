@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Hut Order Confirmation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    /* body {
+      
+      background-color: #f6d358;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    } */
+
+    .order-card {
+        font-family: 'Fredoka One', sans-serif;
+      background-color: #e8ba3c;
+      width: 350px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      font-size: 18px;
+    }
+
+    .order-card h2 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #d2691e;
+    }
+
+    .order-card p {
+      color: #5a3e22;
+      margin: 15px 0;
+    }
+
+    .order-card .order-details {
+      font-size: 16px;
+      color: #713e1a;
+      font-weight: bold;
+    }
+
+    .order-card .time-frame {
+      font-size: 18px;
+      color: #c23b22;
+      font-weight: bold;
+    }
+
+    .order-card .icon {
+      font-size: 50px;
+      color: #c23b22;
+      margin-bottom: 20px;
+    }
+
+    .order-card .footer {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: #3b3b3b;
+    }
+
+    .order-card .footer a {
+      color: #c23b22;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="order-card">
+    <img src="assets/cross.png" alt="" width="20px" style="cursor: pointer;position: relative;left: 45%;" onclick="close()">
+    <h2>We've Got Your Order!</h2>
+    <p>Thank you for choosing Pizza Hut!</p>
+    <div class="order-details">
+      Your order is being prepared and will be delivered shortly.
+    </div>
+    <div class="time-frame">
+        <h2 id="timer">45:00</h2>
+      <h6>Estimated Delivery: 30-45 Minutes</h6>
+    </div><br><br><br>
+    <div class="footer">
+      <p>Want to track your order? <a href="#">Click here</a></p>
+    </div>
+  </div>
+</body>
+</html>

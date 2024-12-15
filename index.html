@@ -8,199 +8,386 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Silkscreen:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aladin&family=Handjet:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Rye&family=Silkscreen:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <script src="script.js"></script>
+    <link
+      href="https://db.onlinewebfonts.com/c/f42d110e131b1f8ec266f78bb548971f?family=Squickt+W01+Plain"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <center>
-      <!-- bgcolor="#faebce" -->
-      
-      <div class="container pixel-border">
-        <div class="upper"></div>
-        <img src="assets/Group 8.png" height="200px" id="logo" />
+    <div class="mainContainer">
+      <div class="leftHeader pixel-border" style="border-radius: 50px 50px 0 0">
+        <br />
         <center>
-          <p>
-            Welcome to <b>Pizza Hut!</b> This Electronic Storefront is brought
-            to you by Pizza Hut and The Santa Cruz Operation. You may click on
-            the Pizza Hut logo on any page to submit comments regarding this
-            service to <b> webmaster@pizzahut.com.</b>
-          </p>
-
-          <div id="search-tab">
-            <b><label for="search">Search</label></b>
-            <input type="text" id="search" />
-          </div>
-          <div class="main pixel-border">
-            <div class="item pixel-border" id="one">
-              <img
-                src="assets/pizza1.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(0)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza2.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(1)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza3.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(2)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza4.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(3)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza5.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(4)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza6.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(5)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza7.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(6)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza8.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(7)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-            <div class="item pixel-border">
-              <img
-                src="assets/pizza9.jpg"
-                alt=""
-                height="180px"
-                width="180px"
-              />
-              <div id="temp">
-                <div class="buy pixel-border" onclick="purchase(8)">BUY</div>
-                <img src="assets/like.png" width="50px" height="50px" />
-              </div>
-            </div>
-          </div>
-          <br /><br />
-          <footer>
-            Wired News: Contact Us We are translated daily into Spanish,
-            Portuguese, and Japanese © Copyright 2002, Lycos, Inc. All Rights
-            Reserved. Your use of this website constitutes acceptance of the
-            Lycos Privacy Policy and Terms & Conditions
-          </footer>
+          <img
+            src="assets/pizzaHutLogo-removebg-preview.png"
+            alt="logo"
+            width="200px"
+          />
         </center>
-        <div id="" class=" overlay hidden">
-          <div class="backdrop"></div>
-          <div class="order pixel-border">
-            
-            <h2>Confirm Your Order</h2>
-            <img id="orderedPizza" src="assets/pizza1.jpg" alt="" width="150px" height="150px" />
-            <div class="details">
-              <div class="nameQuantity">
-                <h2>Margherita Pizza</h2>
-                <div class="quantity pixel-border">
-                  <img
-                    src="assets/plus-symbol-button.png"
-                    alt="add"
-                    width="15px"
-                    height="15px"
-                  />
-                  <h2>2</h2>
-                  <img
-                    src="assets/minus.png"
-                    alt="minus"
-                    width="15px"
-                    height="15px"
-                  />
+        <br />
+        <div class="options">
+          <div class="innerOption" style="z-index: 1">
+            <b>Our Services</b>
+            <div
+              class="innerOption"
+              style="background-color: rgb(232, 186, 60); z-index: 2"
+            >
+            <b>Order Online</b>
+              <div class="innerOption" style="z-index: 3">
+                <b> Get Coupons</b>
+                <div
+                  class="innerOption"
+                  style="background-color: rgb(232, 186, 60); z-index: 4"
+                >
+                <b>Store Locator</b>
+                  <div class="innerOption" style="z-index: 5; height: 80px">
+                    <b> VIP</b>
+                  </div>
                 </div>
               </div>
-              <div class="amount">
-                <h2>Amount</h2>
-                <div class="totalAmount pixel-border">
-                  <h2>2 X 199 = 398</h2>
+            </div>
+          </div>
+        </div>
+        <div class="toppings" style="border-radius: 50px 50px 0 0">
+          <center>
+            <p style="width: 250px; font-family: Rye; color: rgb(15, 11, 0)">
+              Why settle for one topping when you can get more?
+            </p>
+          </center>
+          <div style="position: relative; bottom: 15px;font-family: Aladin;color: red;font-size: 40px;"><b>Just For</b></div>
+          <center>
+            <img
+              src="assets/cent.png"
+              alt="cent"
+              width="120px"
+              style="position: relative; bottom: 25px"
+            />
+
+            <div
+              id="addToppings"
+              class="pixel-border"
+              style="cursor: pointer;
+              font-family: Aladin;"
+              onclick="addTopping()"
+            >
+              Add extra Toppings
+            </div>
+          </center>
+          <br />
+        </div>
+      </div>
+
+      <center>
+        <!-- bgcolor="#faebce" -->
+
+        <div class="container pixel-border" style="background-color: #f6d86c">
+          <div class="upper"></div>
+          <img src="assets/Group 8.png" height="200px" id="logo" />
+          <center>
+            <h2
+              style="
+                font-family: 'Squickt W01 Plain';
+                color: red;
+                font-size: 40px;
+              "
+            >
+              The Best Pizza Under One Roof!
+            </h2>
+            <p>
+              Welcome to <b>Pizza Hut!</b> This Electronic Storefront is brought
+              to you by Pizza Hut and The Santa Cruz Operation. You may click on
+              the Pizza Hut logo on any page to submit comments regarding this
+              service to <b> webmaster@pizzahut.com.</b>
+            </p>
+            <marquee style="font-size: large;font-family: Aladin;"
+              >Use Coupon Code <b>'DARSHANC07'</b> and get 10% off</marquee
+            >
+            <br /><br />
+            <div id="search-tab">
+              <b><label for="search">Search Your Favourite Pizza</label></b>
+              <input type="text" id="search" />
+            </div>
+            <br />
+            <div class="main pixel-border">
+              <div class="item pixel-border" id="one">
+                <img
+                  src="assets/pizza1.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(0)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
                 </div>
               </div>
-              <div class="address">
-                <h2 id="addressDetails">Address</h2>
-                <br />
-                <div class="deliveryAddress pixel-border">
-                  <p id="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza2.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(1)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
+                </div>
+              </div>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza3.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(2)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
+                </div>
+              </div>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza4.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(3)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
+                </div>
+              </div>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza5.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(4)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
+                </div>
+              </div>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza6.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(5)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
+                </div>
+              </div>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza7.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(6)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
+                </div>
+              </div>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza8.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(7)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
+                </div>
+              </div>
+              <div class="item pixel-border">
+                <img
+                  src="assets/pizza9.jpg"
+                  alt=""
+                  height="180px"
+                  width="180px"
+                />
+                <div id="temp">
+                  <div class="buy pixel-border" onclick="purchase(8)">BUY</div>
+                  <img src="assets/like.png" width="50px" height="50px" />
                 </div>
               </div>
             </div>
             <br /><br />
-            <div class="button">
-              <div id="cancel" class="pixel-border" onclick="close()">Cancel</div>
-              <div class="confirm pixel-border">Confirm</div>
+            <footer style="font-family: Handjet;font-size: large;"><b>
+              Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is
+              happy to assist you with your home delivery. Every time you order,
+              you get a hot and fresh pizza delivered at your doorstep in less
+              than thirty minutes. <br />*T&C Apply. Hurry up and place your
+              order now! <br />
+              <br />© 2024 Pizza Hut India. All rights reserved. License Number:
+              10017011004220</b>
+            </footer><br>
+          </center>
+          <div id="" class="overlay hidden">
+            <div class="backdrop"></div>
+            <div class="order pixel-border" style="--pixel-bg:#f0b13d;">
+              <h2 id="heading">Confirm Your Order</h2>
+              <img
+                id="orderedPizza"
+                src="assets/pizza1.jpg"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <div class="details">
+                <div class="nameQuantity">
+                  <h2 style="font-family: Aladin;position: relative;right: 10px;">Margherita Pizza</h2>
+                  <div class="quantity pixel-border">
+                    <img
+                      src="assets/plus-symbol-button.png"
+                      alt="add"
+                      width="15px"
+                      height="15px"
+                    />
+                    <h2>2</h2>
+                    <img
+                      src="assets/minus.png"
+                      alt="minus"
+                      width="15px"
+                      height="15px"
+                    />
+                  </div>
+                </div>
+                <div class="amount">
+                  <h2 style="font-family: Aladin;">Amount</h2>
+                  <div class="totalAmount pixel-border" style="--pixel-bg:white;">
+                    <h2>2 X 199 = 398</h2>
+                  </div>
+                </div>
+                <div class="address">
+                  <h2 id="addressDetails" style="font-family: Aladin;">Address</h2>
+                  <br />
+                  <div class="deliveryAddress pixel-border" style="--pixel-bg:white;">
+                    <p id="text"><b>
+                      325/2, Khrwa Chawl, S V Rd, Amboli Naka, Andheri,Mumbai,Maharashtra</b>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <br /><br />
+              <div class="button">
+                <div id="cancel" class="pixel-border" onclick="close()" style="--pixel-bg:rgb(235, 58, 58);font-family: Handjet;">
+                  <b>Cancel</b>
+                </div>
+                <div class="confirm pixel-border" style="--pixel-bg:rgb(76, 226, 76);font-family: Handjet;"><b>Confirm</b></div>
+              </div>
             </div>
           </div>
         </div>
+      </center>
+      <!-- this is container for adding topping -->
+      <div id="" class="overlay hidden">
+        <div class="backdrop"></div>
+        <div class="toppingContainer pixel-border">
+          <center>
+            <h2 class="title" style="font-family: Aladin; font-size: 40px">
+              Customize Your Perfect Pizza!
+            </h2>
+          </center>
+          <h3
+            class="subheading"
+            style="font-family: 'Press Start 2P'; font-size: medium"
+          >
+            Instructions
+          </h3>
+          <ol class="instructions" style="font-family: 'Handjet'">
+            <b
+              ><li>Choose your favorite extra toppings.</li>
+              <li>Watch your pizza dreams come true.</li>
+              <li>Add it to your order and get ready to enjoy!</li></b
+            >
+          </ol>
+          <h3
+            class="subheading"
+            style="font-family: 'Press Start 2P'; font-size: medium"
+          >
+            Toppings List
+          </h3>
+          <div class="top">
+            <div class="imgText">
+              <img src="assets/pepperoni.png" alt="pepperoni" width="60px" />
+              <h4 class="topping-name">Pepperoni</h4>
+            </div>
+            <div class="quantity pixel-border">
+              <img src="assets/plus-symbol-button.png" alt="add" width="15px" />
+              <h2>2</h2>
+              <img src="assets/minus.png" alt="minus" width="15px" />
+            </div>
+          </div>
+          <div class="top">
+            <div class="imgText">
+              <img src="assets/mushroom.png" alt="mushroom" width="60px" />
+              <h4 class="topping-name">Mushroom</h4>
+            </div>
+            <div class="quantity pixel-border">
+              <img src="assets/plus-symbol-button.png" alt="add" width="15px" />
+              <h2>2</h2>
+              <img src="assets/minus.png" alt="minus" width="15px" />
+            </div>
+          </div>
+          <div class="top">
+            <div class="imgText">
+              <img src="assets/onion.png" alt="onion" width="60px" />
+              <h4 class="topping-name">Onion</h4>
+            </div>
+            <div class="quantity pixel-border">
+              <img src="assets/plus-symbol-button.png" alt="add" width="15px" />
+              <h2>2</h2>
+              <img src="assets/minus.png" alt="minus" width="15px" />
+            </div>
+          </div>
+          <div class="top">
+            <div class="imgText">
+              <img src="assets/cheese.png" alt="cheese" width="60px" />
+              <h4 class="topping-name">Mozzarella Cheese</h4>
+            </div>
+            <div class="cheeseOptions">
+              <div class="cheese-quantity pixel-border"><b>Extra</b></div>
+              <div class="cheese-quantity pixel-border"><b>Double</b></div>
+              <div class="cheese-quantity pixel-border" style="width: 60px">
+                <b>Blast</b>
+              </div>
+            </div>
+          </div><br>
+          <center><div class="confirmTopping pixel-border" onclick="confirmTopping()"><b>Confirm</b></div></center>
+          <footer class="footer">
+            Your pizza, your way—just like the good old days!
+          </footer>
+        </div>
       </div>
-    </center>
+      <div id="" class="overlay hidden">
+        <div class="backdrop"></div>
+        <div class="order-card pixel-border">
+          <img src="assets/cross.png" alt="" width="20px" style="cursor: pointer;position: relative;left: 45%;" onclick="orderClose()">
+          <h2>We've Got Your Order!</h2>
+          <center><p>Thank you for choosing Pizza Hut!</p></center>
+          <div class="order-details">
+            Your order is being prepared and will be delivered shortly.
+          </div>
+          <div class="time-frame">
+              <h2 id="timer">45:00</h2>
+            <h6>Estimated Delivery: 30-45 Minutes</h6>
+          </div><br><br><br>
+          <div class="footer">
+            <p>Want to track your order? <a href="#">Click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
