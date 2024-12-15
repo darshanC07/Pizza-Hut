@@ -1,6 +1,6 @@
 # Pizza-Hut
-This is Pizza Hut would look like in 1990s with some retro feel. I designed it with keeping it mind things like limitations in that decade, layouts and fonts.
-# Demo
+This is Pizza Hut would look like in 1990s with some retro feel. I designed it with keeping it mind things like limitations in that decade, layouts and fonts. The site is live on https://darshanc07.github.io/Pizza-Hut   Please do vist it.
+# Demo 
 ![home](./assets/s1.png)
 ![home](./assets/s2.png)
 ![home](./assets/s3.png)
