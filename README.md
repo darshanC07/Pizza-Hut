@@ -12,6 +12,11 @@ This is Pizza Hut would look like in 1990s with some retro feel. I designed it w
 1. Adding Extra Toppings : A dedicated container for user to add their favourite toppings.
 2. Buy Pizza : Customer can buy pizza from menu.
 3. Confirm Order : A popup card to accept order and show preparation timer.
+# Technology Used
+1. Html
+2. Css
+3. Js
+4. Google Fonts
 
 # Feedback
 If you have any feedback, please reach out to me at darshanchoudhary2007@gmail.com.
