@@ -4,10 +4,6 @@ p {
     font-size: x-large;
 }
 
-/* body {
-    cursor: url("assets/cursor.png"), auto;
-} */
-
 label {
     font-family: "Handjet";
     font-size: x-large;
@@ -27,15 +23,12 @@ label {
 
 .container {
     width: var(--containerWidth);
-    /* column-span: 8; */
     margin-top: 15px;
     padding-top: 0px;
 }
 
 .upper {
-    /* border-radius: 5px 5px 0px 0px; */
     background-color: rgb(94, 88, 88);
-    /* width: 995px; */
     height: 60px;
     border-radius: 50%/0 0 50px 50px;
     position: relative;
@@ -50,8 +43,6 @@ label {
 
 .buy {
     width: 50px;
-    /* background-color: ; */
-    /* background: var(--pixel-bg); */
     --pixel-bg: rgb(63, 206, 53);
     box-shadow:
 
@@ -246,7 +237,6 @@ img {
     z-index: 20;
     position: relative;
     padding: 20px;
-    /* border-radius: 8px; */
     text-align: center;
     font-family: 'Fredoka One';
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -271,18 +261,13 @@ img {
     font-size: 20px;
 }
 .mainContainer {
-    /* display: grid;
-    grid-template-columns: 12; */
     display: flex;
     justify-content: center;
     gap: 15px;
-    /* align-items: center; */
 }
 
 .leftHeader {
-    /* column-span: 4;*/
     width: var(--leftHeaderWidth);
-    /* background-color: green;  */
     height: 789px;
     margin-top: 15px;
     z-index: 9;
@@ -305,14 +290,11 @@ img {
 }
 
 .options {
-    /* margin-left: 20px; */
     z-index: 1;
-    /* height: 100px; */
 }
 
 .innerOption {
     border-radius: 50px 50px 0 0;
-    /* border: 2px solid black; */
     border-top: 2px solid black;
     background-color: #f6d358;
     padding-top: 20px;
@@ -327,8 +309,6 @@ img {
     width: 450px;
     margin: 20px auto;
     padding: 20px;
-    /* background: linear-gradient(135deg, #ffe57f, #ff6f61); */
-    /* background-color: rgb(233, 191, 39); */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     --pixel-bg: rgb(226, 199, 100);
     box-shadow:
